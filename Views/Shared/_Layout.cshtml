@@ -128,12 +128,17 @@
                                                 @if (User.Identity.IsAuthenticated)
                                                 {
                                                     <li>
+                                                        <a class="dropdown-item">@User.Identity.Name</a>
+                                                    </li>
+
+                                                    <li>
                                                         <a class="dropdown-item" >@User.Identity.Name</a>
                                                     </li>
                                                     <li>
                                                         <a class="dropdown-item" asp-action="Logout">logout</a>
                                                     </li>
                                                 }
+
                                             </ul>
                                         </li>
                                         <li class="d-none d-lg-block">
